@@ -1,15 +1,28 @@
 import GlobalStyle from './Services/GlobalStyle';
 import styled from 'styled-components/macro';
-import Button from './Components/Button';
-import Header from './Components/Header';
+import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './Pages/Home';
 
 function App() {
 	return (
-		<AppWrapper>
-			<GlobalStyle />
-			<Button text='Click Me' width='40%' />
-			<Header color='red' text='test' />
-		</AppWrapper>
+		<Router>
+			<AppWrapper>
+				<GlobalStyle />
+				<Switch>
+					<Route exact path='/'>
+						<Home />
+					</Route>
+					<Route path='/login'></Route>
+					<Route path='/forgotlogin'></Route>
+					<Route path='/signup'></Route>
+					<Route path='/start'></Route>
+					<Route path='/habits'></Route>
+					<Route path='/habitstracking'></Route>
+					<Route path='/settings'></Route>
+				</Switch>
+			</AppWrapper>
+		</Router>
 	);
 }
 

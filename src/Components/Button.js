@@ -17,8 +17,9 @@ export default function Button({
 
 const ButtonStyled = styled.button`
 	width: ${(props) => props.width};
-	height: 5vh;
+	height: 7vh;
 	background-color: #aa7a78;
+	font-size: 1.56rem;
 	border-radius: 18px;
 	color: white;
 	border: none;
