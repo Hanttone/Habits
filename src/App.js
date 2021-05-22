@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 import { Switch, Route } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './Pages/Home';
+import Login from './Pages/Login';
 
 function App() {
 	return (
@@ -13,7 +14,9 @@ function App() {
 					<Route exact path='/'>
 						<Home />
 					</Route>
-					<Route path='/login'></Route>
+					<Route path='/login'>
+						<Login />
+					</Route>
 					<Route path='/forgotlogin'></Route>
 					<Route path='/signup'></Route>
 					<Route path='/start'></Route>

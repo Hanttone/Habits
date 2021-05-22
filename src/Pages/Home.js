@@ -1,15 +1,26 @@
 import styled from 'styled-components/macro';
 import Button from '../Components/Button';
 import Header from '../Components/Header';
+import { useHistory } from 'react-router-dom';
 
 export default function Home() {
+	const history = useHistory();
+
+	function handleClick() {
+		history.push('/login');
+	}
+
 	return (
 		<ContentBackground>
 			<Header
 				color='white'
 				text='Habits Tracker'
 			/>
-			<Button text='Start' width='60%' />
+			<Button
+				text='Start'
+				width='60%'
+				onUserClick={handleClick}
+			/>
 		</ContentBackground>
 	);
 }
