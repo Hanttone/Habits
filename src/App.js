@@ -4,6 +4,8 @@ import { Switch, Route } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
+import SignUp from './Pages/SignUp';
+import Start from './Pages/Start';
 
 function App() {
 	return (
@@ -18,8 +20,12 @@ function App() {
 						<Login />
 					</Route>
 					<Route path='/forgotlogin'></Route>
-					<Route path='/signup'></Route>
-					<Route path='/start'></Route>
+					<Route path='/signup'>
+						<SignUp />
+					</Route>
+					<Route path='/start'>
+						<Start />
+					</Route>
 					<Route path='/habits'></Route>
 					<Route path='/habitstracking'></Route>
 					<Route path='/settings'></Route>
