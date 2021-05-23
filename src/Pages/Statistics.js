@@ -8,7 +8,7 @@ export default function Start() {
 			<HeaderBackground />
 			<Header
 				color='#6E473F'
-				text='Habits Today'
+				text='Habits Stats'
 				absolute='absolute'
 				setPositionY='6%'
 			/>
@@ -40,7 +40,7 @@ const HeaderBackground = styled.div`
 	background-image: url('https://images.unsplash.com/photo-1569230919100-d3fd5e1132f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80');
 	background-size: 160%;
 	background-repeat: no-repeat;
-	background-position: 33% 55%;
+	background-position: 33% 75%;
 	height: 18vh;
 	width: 100%;
 	display: flex;

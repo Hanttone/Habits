@@ -14,7 +14,7 @@ export default function UserInput({
 
 const InputStyled = styled.input`
 	width: 80%;
-	height: 8vh;
+	height: 7vh;
 	border: none;
 	border-radius: 18px;
 	text-align: center;

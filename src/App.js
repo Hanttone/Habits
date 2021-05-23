@@ -6,6 +6,9 @@ import Home from './Pages/Home';
 import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
 import Start from './Pages/Start';
+import NewHabit from './Pages/NewHabit';
+import Statistics from './Pages/Statistics';
+import Settings from './Pages/Settings';
 
 function App() {
 	return (
@@ -26,9 +29,15 @@ function App() {
 					<Route path='/start'>
 						<Start />
 					</Route>
-					<Route path='/habits'></Route>
-					<Route path='/habitstracking'></Route>
-					<Route path='/settings'></Route>
+					<Route path='/habits'>
+						<NewHabit />
+					</Route>
+					<Route path='/habitstracking'>
+						<Statistics />
+					</Route>
+					<Route path='/settings'>
+						<Settings />
+					</Route>
 				</Switch>
 			</AppWrapper>
 		</Router>
